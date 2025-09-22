@@ -101,7 +101,6 @@ You can now create custom packages under `/home/ros2_ws/src/` and they will pers
 | Issue | Solution |
 |------|----------|
 | **Permission denied: docker** | Add your user to the docker group:<br>`sudo usermod -aG docker $USER && newgrp docker` |
-<!-- | **Cannot access /dev/video0** | Add your user to the `video` group:<br>`sudo usermod -aG video $USER` | -->
 | **Gazebo spawn service failed** | Don’t Ctrl+C — let it fail completely, then close and restart. |
 | **Cannot connect to noVNC** | Run `./start_novnc.sh status` to check if the container is running. |
 
