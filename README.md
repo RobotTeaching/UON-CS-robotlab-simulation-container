@@ -25,8 +25,7 @@ Whether you're running on Linux, macOS, or Windows, this container lets you star
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Cobot-Maker-Space/turtlebot-desktop-container.git
-cd turtlebot-desktop-container/src
+git clone https://github.com/Cobot-Maker-Space/UON-CS-robotlab-simulation-container.git
 ```
 
 ---
@@ -38,7 +37,7 @@ Before opening the devcontainer, make sure the shared Docker network and noVNC s
 Run:
 
 ```bash
-cd ~/turtlebot-desktop-container/src/.devcontainer/
+cd ~/UON-CS-robotlab-simulation-container/src/.devcontainer/
 ./start_novnc.sh start
 ```
 
