@@ -23,45 +23,24 @@
             ]
         }
     },
-    // "containerEnv": {
-    //     "DISPLAY": "${env:DISPLAY}",
-    //     "ROS_LOCALHOST_ONLY": "0",
-    //     "ROS_DOMAIN_ID": "30",
-    //     "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
-    //     "TURTLEBOT3_MODEL": "waffle_pi"
-    // },
-    // "runArgs": [
-    //     "--net=host",
-    //     "-e", "DISPLAY",
-    //     "--device=/dev/video0",
-    //     "--device=/dev/dri",
-    //     "--volume=/tmp/.X11-unix:/tmp/.X11-unix",
-    //     "--group-add=video"
-    // ],
-    // "forwardPorts": [5901, 6080],
     
     "containerEnv": {
-    // "DISPLAY": ":1", // VNC will use display :1
     "DISPLAY": "novnc:0.0",
     "ROS_LOCALHOST_ONLY": "0",
     "ROS_DOMAIN_ID": "30",
     "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
     "TURTLEBOT3_MODEL": "waffle_pi"
 },
-"runArgs": [
+    "runArgs": [
     // "--net=host",
      "--network=ros",
     "--device=/dev/video0",
-    // "--device=/dev/dri",
     "--group-add=video"
 ],
 
 "forwardPorts": [8080],
 
     "mounts": [
-        // Comment the below line for MacOS or Windows Build as its meant for GPU acceleration Access on Linux
-        // "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached",
-
         
         "source=${localWorkspaceFolder}/../cache/humble/build,target=/home/ros2_ws/build,type=bind",
         "source=${localWorkspaceFolder}/../cache/humble/install,target=/home/ros2_ws/install,type=bind",
