@@ -27,15 +27,6 @@ RUN apt-get update && apt-get install -y \
     git wget curl python3-pip tini locales tzdata dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
-# noVNC + websockify
-RUN git clone https://github.com/novnc/noVNC.git /usr/lib/novnc && \
-    pip install git+https://github.com/novnc/websockify.git@v0.10.0 && \
-    ln -s /usr/lib/novnc/vnc.html /usr/lib/novnc/index.html
-
-# Add VNC startup script
-# COPY entrypoint.sh /entrypoint.sh
-# RUN chmod +x /entrypoint.sh && dos2unix /entrypoint.sh
-
 # Setup ROS environment
 RUN echo "source /opt/ros/humble/setup.bash && source /home/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc
 
@@ -44,16 +35,9 @@ RUN usermod -aG video $USERNAME
 
 USER $USERNAME
 
-# 5901 for VNC, 6080 for noVNC web access
-# EXPOSE 5901 6080  
+# For novnc 
 EXPOSE 8080
 
-# # Sanity check: print versions to confirm VNC & noVNC installed
-# RUN echo "===== Build-time checks =====" && \
-#     which vncserver || echo "vncserver NOT FOUND!" && \
-#     vncserver -version || echo "vncserver command failed!" && \
-#     test -d /usr/lib/novnc && echo "noVNC directory exists." || echo "noVNC directory missing!" && \
-#     python3 -m websockify --version || echo "websockify NOT FOUND!"
 
 
 
