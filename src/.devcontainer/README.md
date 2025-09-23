@@ -38,7 +38,7 @@ Run:
 
 ```bash
 cd ~/UON-CS-robotlab-simulation-container/src/.devcontainer/
-./start_novnc.sh start
+./start_vnc.sh start
 ```
 
 This will:
@@ -77,7 +77,7 @@ If ROS 2 is installed correctly, you’ll see a list of topics (or an empty list
 ---
 
 
-### 5. Switching from First-Time Setup to Development Mode
+<!-- ### 5. Switching from First-Time Setup to Development Mode
 
 By default, the first container build will clone and build the required TurtleBot3 packages.  
 After this initial build, edit `.devcontainer/devcontainer.json` and switch:
@@ -93,7 +93,7 @@ After this initial build, edit `.devcontainer/devcontainer.json` and switch:
 This will prevent re-cloning packages every time and speed up container startup.  
 
 You can now create custom packages under `/home/ros2_ws/src/` and they will persist between container sessions.
-
+ -->
 ---
 
 ## 🛠 Troubleshooting & Common Issues
