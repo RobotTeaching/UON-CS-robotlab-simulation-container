@@ -26,8 +26,10 @@ RUN apt-get update && apt-get install -y \
     net-tools nano iputils-ping curl fswebcam gnupg2 lsb-release sudo \
     build-essential mesa-utils python3-colcon-common-extensions \
     ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-slam-toolbox \
-    ros-humble-teleop-twist-keyboard ros-humble-gazebo-ros-pkgs \
-    ros-humble-gazebo-plugins ros-humble-cartographer ros-humble-cartographer-ros \
+    ros-humble-teleop-twist-keyboard \
+   # ros-humble-gazebo-ros-pkgs \
+   # ros-humble-gazebo-plugins \
+    ros-humble-cartographer ros-humble-cartographer-ros \
     ros-humble-rviz2 \
     # VNC + Desktop + noVNC
     ubuntu-mate-desktop \ 
