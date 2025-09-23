@@ -38,7 +38,7 @@ Run:
 
 ```bash
 cd ~/UON-CS-robotlab-simulation-container/src/.devcontainer/
-./start_novnc.sh start
+./start_vnc.sh start
 ```
 
 This will:
