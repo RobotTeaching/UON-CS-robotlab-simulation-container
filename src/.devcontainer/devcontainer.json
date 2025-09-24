@@ -5,7 +5,7 @@
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "BASE_IMAGE": "ghcr.io/sloretz/ros:humble-desktop",
+            "BASE_IMAGE": "osrf/ros:humble-desktop-full",
             "USERNAME": "team"
         }
     },
