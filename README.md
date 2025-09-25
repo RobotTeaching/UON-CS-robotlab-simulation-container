@@ -1,6 +1,6 @@
 # 🐢 TurtleBot Desktop Development Container (with noVNC)
 
-This repository provides a ready-to-use **Docker-based ROS 2 Humble development environment** for TurtleBot3 simulation and development.  
+This repository provides a ready-to-use **Docker-based ROS 2 Humble development environment** for Windows and Linux machines(amd based systems) for TurtleBot3 simulation and development.  
 
 It includes:
 - ROS 2 Humble preinstalled with navigation, SLAM, teleop, Gazebo, and visualization packages  
