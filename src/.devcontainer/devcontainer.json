@@ -5,7 +5,7 @@
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "BASE_IMAGE": "osrf/ros:humble-desktop-full",
+            "BASE_IMAGE": "ros:humble",
             "USERNAME": "team"
         }
     },
