@@ -1,7 +1,6 @@
-# FROM ros:humble
+FROM ros:humble
 # FROM ghcr.io/sloretz/ros:humble-desktop
-
-FROM osrf/ros:humble-desktop-full  
+# FROM osrf/ros:humble-desktop-full  
 
 ARG USERNAME=team
 ARG USER_UID=1000
