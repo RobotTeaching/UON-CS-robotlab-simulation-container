@@ -25,7 +25,7 @@ Whether you're running on Linux, macOS, or Windows, this container lets you star
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/RobotTeaching/UON-CS-robotlab-simulation-container.git
+git clone --branch main --single-branch https://github.com/RobotTeaching/UON-CS-robotlab-simulation-container.git
 ```
 
 ---
