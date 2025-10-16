@@ -104,6 +104,8 @@ You can now create custom packages under `/home/ros2_ws/src/` and they will pers
 | **Gazebo spawn service failed** | Don’t Ctrl+C — let it fail completely, then close and restart. |
 | **Cannot connect to noVNC** | Run `./start_novnc.sh status` to check if the container is running. |
 | **Unable to create file [..]: Filename too long on clone** | Run `git config --system core.longpaths true` in a administrator terminal. |
+| **ASLA error** or any other gazebo error | Press `Ctrl + Shift + P`, choose `Reopen folder locally` and then again `Ctrl + Shift + P` and mow choose `Rebuild and Reopen in container` |
+
 
 ---
 
