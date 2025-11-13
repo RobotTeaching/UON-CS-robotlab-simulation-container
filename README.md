@@ -1,6 +1,6 @@
 # 🐢 TurtleBot Desktop Development Container (with noVNC)
 
-This repository provides a ready-to-use **Docker-based ROS 2 Humble development environment** for TurtleBot3 simulation and development.  
+This repository provides a ready-to-use **Docker-based ROS 2 Humble development environment** for **Apple Silicon devices** (arm based systems) for TurtleBot3 simulation and development.  
 
 It includes:
 - ROS 2 Humble preinstalled with navigation, SLAM, teleop, Gazebo, and visualization packages  
@@ -25,7 +25,7 @@ Whether you're running on Linux, macOS, or Windows, this container lets you star
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Cobot-Maker-Space/UON-CS-robotlab-simulation-container.git
+git clone --branch macOS --single-branch https://github.com/RobotTeaching/UON-CS-robotlab-simulation-container.git
 ```
 
 ---
