@@ -29,7 +29,7 @@
     "ROS_LOCALHOST_ONLY": "0",
     "ROS_DOMAIN_ID": "30",
     "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
-    "TURTLEBOT3_MODEL": "waffle_pi"
+    "TURTLEBOT3_MODEL": "waffle"
 },
     "runArgs": [
     // "--net=host",
