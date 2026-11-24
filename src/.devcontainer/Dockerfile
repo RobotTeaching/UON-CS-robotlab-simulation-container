@@ -41,6 +41,10 @@ RUN apt-get update && apt-get install -y \
     git wget curl python3-pip tini locales tzdata dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
+RUN pip install --no-cache-dir \
+    pyrealsense2==2.58.3.10794 \
+    paho-mqtt==2.1.0
+
 COPY setup.sh /usr/local/bin/setup.sh
 RUN chmod +x /usr/local/bin/setup.sh
     
